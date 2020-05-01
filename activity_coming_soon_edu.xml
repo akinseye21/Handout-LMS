@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ComingSoonEdu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/covid_hd_img2">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HANDOUT EDU"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/whitelineexterior"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#34364b"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#222a37"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/txt1"
+            android:text="Welcome to the future of\nDigital Learning!"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textStyle="normal"
+            android:textSize="12dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txt1"
+            android:id="@+id/txt2"
+            android:text="Handout Learning Management System is a virtual\nsocial learning environment and course management\nsystem developed by ZENA CONCEPT"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_below="@+id/txt2"
+            android:id="@+id/txt3"
+            android:text="You are all signed up to get access to HANDOUT's EDU\nplatform before it's available to the public. We'll be\nsending you insider first look at the product, behind\nthe scene actions and more soon!\n\nPlease share and invite your friends"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt3"
+            android:layout_centerHorizontal="true"
+            android:text="Return to Home Screen"
+            android:textColor="#ffffff"
+            android:background="@drawable/playagain"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/returnHome"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+
+
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal|center|bottom"
+                android:background="#12141b"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <!--                    <View-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="1dp"-->
+                <!--                        android:background="#727193" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/linmenu"
+                        >
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/menu_top" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="60dp"
+                        android:id="@+id/home">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/triviahomeicon" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginRight="60dp"
+                        android:id="@+id/lincovid19">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/triviacovidicon" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="60dp"
+                        android:id="@+id/lintips">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/triviatipsicon" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/lintrivia">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/triviagameicon" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

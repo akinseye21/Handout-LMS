@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerlayout"
+    android:orientation="vertical"
+    tools:context=".CovidTellAFriend">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/covid_hd_img2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/menu_top"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/menu"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/logo"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/covid_logo" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/invite_friends"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Learning is better with friends!"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:paddingLeft="20dp"
+            android:background="@drawable/emailbtn"
+            android:textColor="#ffffff"
+            android:id="@+id/emailmessage"
+            android:gravity="center"
+            android:drawableStart="@drawable/mail"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:paddingLeft="20dp"
+            android:background="@drawable/smsbtn"
+            android:drawableLeft="@drawable/sms"
+            android:textColor="#ffffff"
+            android:id="@+id/smsmessage"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="WHATSAPP"
+            android:paddingLeft="20dp"
+            android:background="@drawable/whatsappbtn"
+            android:drawableLeft="@drawable/whatsapp"
+            android:textColor="#ffffff"
+            android:id="@+id/whatsappmessage"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#12161f"
+        android:divider="#fff"
+        app:itemIconTint="@android:color/white"
+        android:dividerHeight="1dp"
+        app:itemTextColor="#fff"
+        app:itemTextAppearance="@style/NavigationText"
+        app:menu="@menu/navigation_menu_covid"
+        android:layout_gravity="start"
+        android:id="@+id/navigationview">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

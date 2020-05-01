@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222a37"
+    tools:context=".World">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="World wide stats"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="20dp"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginBottom="60dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                            android:src="@drawable/ic_world_map"
+                            android:layout_marginTop="10dp"/>
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/btnlogin"
+                            android:layout_alignStart="@+id/txt"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:backgroundTint="#ffffff" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_below="@+id/country"
+                                    android:gravity="center"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/sick"/>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Confirmed"
+                                            android:textSize="10dp"
+                                            android:fontFamily="sans-serif-light"
+                                            android:textColor="#ffffff"
+                                            android:paddingLeft="5dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Cases"
+                                            android:textSize="10dp"
+                                            android:fontFamily="sans-serif-light"
+                                            android:textColor="#ffffff"
+                                            android:paddingLeft="5dp"/>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="20dp"
+                                    android:layout_height="0.5dp"
+                                    android:background="#ffffff"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:paddingLeft="10dp"
+                                    android:id="@+id/confirmedcase"
+                                    android:fontFamily="sans-serif-black"/>
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_below="@+id/country"
+                                    android:gravity="center"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/rip"/>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="No of"
+                                            android:textSize="10dp"
+                                            android:fontFamily="sans-serif-light"
+                                            android:textColor="#ffffff"
+                                            android:paddingLeft="5dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Deaths"
+                                            android:textSize="10dp"
+                                            android:fontFamily="sans-serif-light"
+                                            android:textColor="#ffffff"
+                                            android:paddingLeft="5dp"/>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="20dp"
+                                    android:layout_height="0.5dp"
+                                    android:background="#ffffff"
+                                    android:layout_marginLeft="15dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#ff3555"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:paddingLeft="10dp"
+                                    android:id="@+id/deathcase"
+                                    android:fontFamily="sans-serif-black"/>
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_below="@+id/country"
+                                    android:gravity="center"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/happy"/>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="No of"
+                                            android:textSize="10dp"
+                                            android:fontFamily="sans-serif-light"
+                                            android:textColor="#ffffff"
+                                            android:paddingLeft="5dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Recoveries"
+                                            android:textSize="10dp"
+                                            android:fontFamily="sans-serif-light"
+                                            android:textColor="#ffffff"
+                                            android:paddingLeft="5dp"/>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="20dp"
+                                    android:layout_height="0.5dp"
+                                    android:background="#ffffff"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#8cffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:paddingLeft="10dp"
+                                    android:id="@+id/recoverycase"
+                                    android:fontFamily="sans-serif-black"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+</FrameLayout>

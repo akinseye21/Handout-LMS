@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akinseye.ndif_yemmanuel.handout"
+    android:allowBackup="false"
+    android:label="Hand Out"
+    tools:replace="allowBackup, label">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo_handout"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo_handout"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.MainActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.ComingSoonEdu"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg"/>
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.Question10"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.Question9"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.Question8"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.Question7"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.Question6"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.Question5"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.Question4"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.Question3"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.Question2"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.TriviaFail"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.TriviaPassed"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.Question1"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.TriviaInstruction"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.HandoutTrivia"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.CovidTellAFriend"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.AboutHandout"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.CovidSettings"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.NcdcHotline"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.CovidTipsPDFview"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.WorldMap"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.CovidTips"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.HandoutCovid19"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.AppRegister"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.AppRegistration2"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.EntrySelectionPage"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+        <activity
+            android:name="com.akinseye.ndif_yemmanuel.handout.AfterSplash"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.bg" />
+    </application>
+
+</manifest>

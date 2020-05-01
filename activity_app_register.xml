@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backdrop"
+    android:gravity="center_horizontal"
+    tools:context=".AppRegister">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:paddingTop="30dp"
+            android:id="@+id/txt1"
+            android:textColor="#dcdcdc"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="sandeepkasundra"
+            android:textColorHint="#808080"
+            android:id="@+id/edt1"
+            android:background="@drawable/edittext_bottom_line"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:cursorVisible="true"
+            android:textColor="#ffffff"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:id="@+id/txt2"
+            android:textColor="#dcdcdc"
+            android:paddingTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/edt2"
+            android:hint="sandeepkasundra@gmail.com"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#808080"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_bottom_line"
+            android:gravity="center"
+            android:cursorVisible="true"
+            android:textColor="#ffffff"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:id="@+id/txt3"
+            android:paddingTop="20dp"
+            android:textColor="#dcdcdc"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="080*****1390"
+            android:inputType="number"
+            android:textColorHint="#696969"
+            android:id="@+id/edt3"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_bottom_line"
+            android:gravity="center"
+            android:cursorVisible="true"
+            android:textColor="#ffffff"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:paddingTop="20dp"
+            android:id="@+id/txt4"
+            android:textColor="#dcdcdc"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="**************"
+            android:inputType="textPassword"
+            android:textColorHint="#696969"
+            android:id="@+id/edt4"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_bottom_line"
+            android:gravity="center"
+            android:cursorVisible="true"
+            android:textColor="#fff"/>
+
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/next"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="40dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? "
+                android:id="@+id/txt5"
+                android:textColor="#a2a1b8"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:id="@+id/login"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

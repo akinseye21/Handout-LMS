@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#222a37"
+    tools:context=".Africa">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="60dp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="#dd480e" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="> 100"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="8dp"
+                    android:paddingLeft="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="#cece21"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 - 100"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="8dp"
+                    android:paddingLeft="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="#052136"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="8dp"
+                    android:paddingLeft="5dp"/>
+
+            </LinearLayout>
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="300dp"-->
+            <!--                app:srcCompat="@drawable/ic_nigeria_map"/>-->
+
+            <com.richpath.RichPathView
+                android:id="@+id/ic_africa"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                app:vector="@drawable/ic_africa2"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

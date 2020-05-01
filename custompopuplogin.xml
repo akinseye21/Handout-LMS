@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    android:background="@drawable/whiteoutsideblackinside"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#a2a1b8"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/edt1"
+        android:textColorHint="@drawable/selector"
+        android:cursorVisible="true"
+        android:background="@drawable/edittext_bottom_line"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:imeOptions="actionNext"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#a2a1b8"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/edt2"
+        android:cursorVisible="true"
+        android:inputType="textPassword"
+        android:textColorHint="@drawable/selector"
+        android:background="@drawable/edittext_bottom_line"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxRememberMe"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="Remember me"
+        android:textColor="#ffffff"
+        android:buttonTint="#ffffff"
+        android:layout_gravity="center_horizontal"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnlogin"
+        android:layout_alignStart="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="#ffffff" />
+
+
+    <Button
+        android:id="@+id/loginto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:layout_marginBottom="30dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>
